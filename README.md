@@ -50,12 +50,10 @@ Then, run the notebook cell by cell to interact with AgentMILO.
 This repository contains expert-designed knowledge graphs used in the AgentMILO framework for MILP modeling. These graphs provide structured representations of constraints, variables, and objectives to assist in MILP formulation.
 
 #### Kowledge Graph 1: Production Planning: (Prepared by Vicky Mak-Hau)
-![Graph 1](![Production Planning](https://github.com/user-attachments/assets/acec48fa-7c96-4b57-bd7a-6674fed0592f)
-)
+![Production Planning](https://github.com/user-attachments/assets/560debc4-7fbc-462e-851a-cb710d9045a6)
 
 #### Kowledge Graph 2: Travelling Salesman Problem: (Prepared by Joyce Zhang)
-![Graph 2](![TSP](https://github.com/user-attachments/assets/03fad44b-f52e-4bdf-8762-2067e6d038c4)
-)
+![TSP](https://github.com/user-attachments/assets/d5cdb41b-78de-4a5c-9e28-2d2a3c7f2fc0)
 
 ---
 ## 🧑‍💻 Auto-Answering Agents Acting as Users  
