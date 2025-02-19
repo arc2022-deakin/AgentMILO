@@ -52,9 +52,7 @@ In this framework, the auto-answering agents are designed to act as different ty
 🔗 Full system prompts for all auto-answering agents are available here:  
 👉 [AgentMILO System Auto Answering Agent Prompts](Auto_Answering_Agents_Prompts.txt)  
 
----
-
-## 📌 Auto-Answering Agent Profiles  
+# 📌 Auto-Answering Agent Profiles  
 
 | Agent (User Type) | Description | Interaction Goals | Example Response |
 |----------------------|----------------|----------------------|----------------------|
@@ -69,26 +67,19 @@ In this framework, the auto-answering agents are designed to act as different ty
 | Agent 9: Concise Expert | Highly knowledgeable and prefers minimal but precise information. | Provide only critical details, request a quick summary and best solver recommendation. | *"The problem is a nonlinear optimization with two constraints. What’s the best solver?"* |
 | Agent 10: Practical-Only | No interest in technical details—only cares about results. | Describe problems in practical terms, request a summary and mathematical model without deep understanding. | *"How do I increase revenue while cutting production costs? Just tell me the best solution."* |
 
----
-
-## 📜 Full System Prompts
-🔗 For the complete system prompts used for each auto-answering agent, visit:  
-👉 [Full System Prompts on GitHub](Auto_Answering_Agents_Prompts.txt)  
-
 The full system prompts include:
 - Detailed behavior guidelines for each agent.
 - Interaction rules, memory handling, and termination conditions.
 - Example responses and expected behaviors.
 
----
-
-## 🛠 Interaction Guidelines for Auto-Answering Agents
+# 🛠 Interaction Guidelines for Auto-Answering Agents
 - Each agent (acting as a user) has predefined goals and response styles.
 - All agents request summaries and mathematical models from the `Agent_IC` module.
 - No agent is allowed to provide a summary or model—only request them.
 - Sessions terminate once the summary and mathematical model are received.
 - Each session starts with a memory reset to ensure unbiased interactions.
 
+---
 
 ## 🏆 Experiments & Findings
 
