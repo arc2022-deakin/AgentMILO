@@ -101,10 +101,11 @@ SOFTWARE.
 
 ---
 
-## 📣 Citation
+## 🔔 Citation
 
-If you use AgentMILO in your research, please cite:
+If you use **AgentMILO** in your research, please cite:
 
+```bibtex
 @article{AgentMILO2025,
   author    = {Jyotheesh Gaddam and Vicky Mak-Hau and Bahadorreza Ofoghi and John Yearwood and Diego Molla-Aliod and Lele Zhang},
   title     = {AgentMILO: A Knowledge-Based Framework for Complex MILP Modeling Conversations with LLMs},
@@ -112,6 +113,7 @@ If you use AgentMILO in your research, please cite:
   year      = {2025},
   doi       = {your-doi-here}
 }
+```
 
 ---
 
