@@ -105,11 +105,11 @@ AgentMILO is developed by:
 | Name                  | Institution                 | Email                                      |
 |----------------------|---------------------------|--------------------------------------------|
 | Jyotheesh Gaddam     | Deakin University         | 📧 [j.gaddam@deakin.edu.au](mailto:j.gaddam@deakin.edu.au) |
+| Lele Zhang          | The University of Melbourne | 📧 [lele.zhang@unimelb.edu.au](mailto:lele.zhang@unimelb.edu.au) |
 | Vicky Mak-Hau        | Deakin University         | 📧 [vicky.mak@deakin.edu.au](mailto:vicky.mak@deakin.edu.au) |
 | Bahadorreza Ofoghi   | Deakin University         | 📧 [b.ofoghi@deakin.edu.au](mailto:b.ofoghi@deakin.edu.au) |
 | John Yearwood        | Deakin University         | 📧 [john.yearwood@deakin.edu.au](mailto:john.yearwood@deakin.edu.au) |
 | Diego Molla-Aliod    | Macquarie University      | 📧 [diego.molla-aliod@mq.edu.au](mailto:diego.molla-aliod@mq.edu.au) |
-| Lele Zhang          | The University of Melbourne | 📧 [lele.zhang@unimelb.edu.au](mailto:lele.zhang@unimelb.edu.au) |
 
 This research was fully funded by the Australian Research Council (ARC) Discovery Project DP220101925. We also acknowledge Deakin University, Macquarie University, and The University of Melbourne for providing essential resources.
 
