@@ -22,19 +22,19 @@ This repository includes:
 
 ---
 
-## 🚀 Installation & Setup
-### **1️⃣ Clone the Repository**
-```bash
-git clone https://github.com/arc2022-deakin/AgentMILO.git
-cd AgentMILO
+## 📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
 
 ## 👥 Authors & Acknowledgments
 AgentMILO is developed by:
-- Jyotheesh Gaddam (Deakin University)
-- Vicky Mak-Hau (Deakin University)
-- Bahadorreza Ofoghi (Deakin University)
-- John Yearwood (Deakin University)
-- Diego Molla-Aliod (Macquarie University)
-- Lele Zhang (The University of Melbourne)
+- Jyotheesh Gaddam (Deakin University) - 📧 j.gaddam@deakin.edu.au
+- Vicky Mak-Hau (Deakin University) - 📧 vicky.mak@deakin.edu.au
+- Bahadorreza Ofoghi (Deakin University) - 📧 b.ofoghi@deakin.edu.au
+- John Yearwood (Deakin University) - 📧 john.yearwood@deakin.edu.au
+- Diego Molla-Aliod (Macquarie University) - 📧 diego.molla-aliod@mq.edu.au
+- Lele Zhang (The University of Melbourne) - 📧 lele.zhang@unimelb.edu.au
 
 This research is funded by the Australian Research Council (ARC) Discovery Project DP220101925. We also acknowledge Deakin University, Macquarie University, and The University of Melbourne for providing essential resources.
+
+## 📬 Contact
+For questions or collaboration inquiries, please reach out via Email or open an issue on GitHub.
