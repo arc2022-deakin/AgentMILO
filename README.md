@@ -52,8 +52,24 @@ This repository contains expert-designed knowledge graphs used in the AgentMILO 
 #### Kowledge Graph 1: Production Planning: (Prepared by Vicky Mak-Hau)
 ![Production Planning](https://github.com/user-attachments/assets/560debc4-7fbc-462e-851a-cb710d9045a6)
 
-#### Kowledge Graph 2: Travelling Salesman Problem: (Prepared by Joyce Zhang)
+#### Kowledge Graph 2: Travelling Salesman Problem: (Prepared by Lele Zhang)
 ![TSP](https://github.com/user-attachments/assets/d5cdb41b-78de-4a5c-9e28-2d2a3c7f2fc0)
+
+---
+
+## 📂 Problem Instances
+
+The tested problem instances used in the AgentMILO framework are stored in the [`Problem Instances/`]([Problem Instances](https://github.com/arc2022-deakin/AgentMILO/tree/main/Problem%20Instances)) folder.
+
+### 📌 Included Instances & Credits
+- [Production Planning (PP) Instance]([problem_instances/PP_instance.md](https://github.com/arc2022-deakin/AgentMILO/blob/main/Problem%20Instances/PP_instance.md)) 🏭 - Created by Vicky Mak-Hau  
+- [Traveling Salesperson (TSP) Instance]([problem_instances/TSP_instance.md](https://github.com/arc2022-deakin/AgentMILO/blob/main/Problem%20Instances/TSP_instance.md)) 🛣️ - Created by Lele Zhang  
+
+Each instance includes:
+- Problem Statement
+- Tables for input data
+- Mathematical Model
+- Constraints & Objective Function
 
 ---
 ## 🧑‍💻 Auto-Answering Agents Acting as Users  
@@ -117,6 +133,9 @@ AgentMILO was evaluated against a general LLM agent using:
 ├── 📁 Knowledge Graphs/                      # Expert-designed knowledge graphs for MILP modeling            
 │ ├── 📄 Production Planning.mindatom         # Knowledge graph for production planning scenarios
 │ ├── 📄 TSP.mindatom                         # Knowledge graph for travelling salesman probelm scenarios
+├── 📁 Problem Instances/                     # Tested Problem Instances (TSP & PP)            
+│ ├── 📄 Production Planning.md               # PP problem instance with mathematical model
+│ ├── 📄 TSP.md                               # TSP problem instance with mathematical model
 ├── 📄 AgentMILO.ipynb                        # Jupyter Notebook (Code, Prompts, Knowledge Graphs, Conversations, Test Instances)
 ├── 📄 Auto_Answering_Agents_Prompts.txt      # Full Auto-Answering Agent Prompts
 ├── 📄 requirements.txt                       # Dependencies
