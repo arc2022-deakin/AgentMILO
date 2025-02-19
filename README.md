@@ -45,6 +45,17 @@ Then, run the notebook cell by cell to interact with AgentMILO.
 
 ---
 
+## 📂 Knowledge Graphs
+
+This repository contains expert-designed knowledge graphs used in the AgentMILO framework for MILP modeling. These graphs provide structured representations of constraints, variables, and objectives to assist in MILP formulation.
+
+#### Graph 1: Production Planning: (Prepared by Vicky Mak-Hau)
+![Graph 1](Knowledge Graphs/Production Planning.png)
+
+#### Graph 2: Travelling Salesman Problem: (Prepared by Joyce Zhang)
+![Graph 2](Knowledge Graphs/TSP.png)
+
+---
 ## 🧑‍💻 Auto-Answering Agents Acting as Users  
 
 In this framework, the auto-answering agents are designed to act as different types of users with varying levels of expertise in optimization. These are not real users, but simulated agents following distinct behavior patterns to interact with the system. Each agent mimics a unique interaction style, ensuring diverse testing scenarios.
