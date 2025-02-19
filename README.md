@@ -103,6 +103,9 @@ AgentMILO was evaluated against a general LLM agent using:
 
 ```plaintext
 📦 AgentMILO
+├── 📁 Knowledge Graphs/                      # Expert-designed knowledge graphs for MILP modeling            
+│ ├── 📄 Production Planning.mindatom         # Knowledge graph for production planning scenarios
+│ ├── 📄 TSP.mindatom                         # Knowledge graph for travelling salesman probelm scenarios
 ├── 📄 AgentMILO.ipynb                        # Jupyter Notebook (Code, Prompts, Knowledge Graphs, Conversations, Test Instances)
 ├── 📄 Auto_Answering_Agents_Prompts.txt      # Full Auto-Answering Agent Prompts
 ├── 📄 requirements.txt                       # Dependencies
