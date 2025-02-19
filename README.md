@@ -45,10 +45,55 @@ Then, run the notebook cell by cell to interact with AgentMILO.
 
 ---
 
+## 🧑‍💻 Auto-Answering Agents Acting as Users  
+
+In this framework, the auto-answering agents are designed to act as different types of users with varying levels of expertise in optimization. These are not real users, but simulated agents following distinct behavior patterns to interact with the system. Each agent mimics a unique interaction style, ensuring diverse testing scenarios.
+
+🔗 Full system prompts for all auto-answering agents are available here:  
+👉 [AgentMILO System Auto Answering Agent Prompts](Auto_Answering_Agents_Prompts.txt)  
+
+---
+
+## 📌 Auto-Answering Agent Profiles  
+
+| Agent (User Type) | Description | Interaction Goals | Example Response |
+|----------------------|----------------|----------------------|----------------------|
+| Agent 1: Beginner & Hesitant | Has very little knowledge of optimization and lacks confidence. | Ask basic questions, seek clarification, request a summary, and obtain a mathematical model. | *"I think the problem is about finding the best solution, but I don’t really understand what ‘objective function’ means. Could you explain?"* |
+| Agent 2: Some Knowledge & Structured | Understands key optimization concepts but needs clarification on advanced topics. | Provide structured problem details, confirm understanding, request a summary and mathematical model. | *"The problem asks me to minimize cost with some restrictions. I understand that, but I’m unsure how to define the objective function. Can you confirm?"* |
+| Agent 3: Advanced & Technical | Knows constraints, variables, and optimization methods but seeks solver recommendations. | Use technical terms, request solver suggestions, expect a detailed mathematical model. | *"The problem is a mixed-integer linear program. Should I apply branch-and-cut or branch-and-bound?"* |
+| Agent 4: Curious Learner | Understands some optimization but asks follow-up questions to deepen understanding. | Ask "why" certain methods are used, request a summary, expect detailed explanations. | *"How do constraints affect the solution? Can you provide an example?"* |
+| Agent 5: Direct & Action-Oriented | Wants quick, straightforward answers with minimal explanation. | Provide only essential details, expect direct answers, request a summary and mathematical model. | *"The problem is about reducing costs. Just tell me the best method to use."* |
+| Agent 6: Over-Explainer | Feels overwhelmed and shares excessive irrelevant information. | Ask for help sorting details, request a summary, seek reassurance. | *"This problem involves maximizing efficiency, but I’m also worried about schedules. Is that part of optimization?"* |
+| Agent 7: Doubtful Expert | Has strong knowledge but second-guesses their own abilities. | Request validation of their own solutions, confirm mathematical model correctness. | *"This looks like quadratic programming, and I think I should use gradient-based methods. Am I correct?"* |
+| Agent 8: Detail-Oriented | Likes step-by-step confirmations and explains problems thoroughly. | Provide extensive details, seek confirmation at each step, request a summary and mathematical model. | *"I’m thinking of two key variables and fuel constraints. Am I on the right track?"* |
+| Agent 9: Concise Expert | Highly knowledgeable and prefers minimal but precise information. | Provide only critical details, request a quick summary and best solver recommendation. | *"The problem is a nonlinear optimization with two constraints. What’s the best solver?"* |
+| Agent 10: Practical-Only | No interest in technical details—only cares about results. | Describe problems in practical terms, request a summary and mathematical model without deep understanding. | *"How do I increase revenue while cutting production costs? Just tell me the best solution."* |
+
+---
+
+## 📜 Full System Prompts
+🔗 For the complete system prompts used for each auto-answering agent, visit:  
+👉 [Full System Prompts on GitHub](Auto_Answering_Agents_Prompts.txt)  
+
+The full system prompts include:
+- Detailed behavior guidelines for each agent.
+- Interaction rules, memory handling, and termination conditions.
+- Example responses and expected behaviors.
+
+---
+
+## 🛠 Interaction Guidelines for Auto-Answering Agents
+- Each agent (acting as a user) has predefined goals and response styles.
+- All agents request summaries and mathematical models from the `Agent_IC` module.
+- No agent is allowed to provide a summary or model—only request them.
+- Sessions terminate once the summary and mathematical model are received.
+- Each session starts with a memory reset to ensure unbiased interactions.
+
+
 ## 🏆 Experiments & Findings
 
 AgentMILO was evaluated against a general LLM agent using:
-- 10 distinct user profiles
+- 10 distinct Auto Answering Agents acting as user profiles
 - PP & TSP problem instances
 - Key metrics: clarity, question quality, model accuracy, and ease of interaction
 
@@ -67,10 +112,11 @@ AgentMILO was evaluated against a general LLM agent using:
 
 ```plaintext
 📦 AgentMILO
-├── 📄 AgentMILO.ipynb      # Jupyter Notebook (Code, Prompts, Knowledge Graphs, Conversations, Test Instances)
-├── 📄 requirements.txt     # Dependencies
-├── 📄 LICENSE              # License information
-└── 📄 README.md            # Project documentation
+├── 📄 AgentMILO.ipynb                        # Jupyter Notebook (Code, Prompts, Knowledge Graphs, Conversations, Test Instances)
+├── 📄 Auto_Answering_Agents_Prompts.txt      # Full Auto-Answering Agent Prompts
+├── 📄 requirements.txt                       # Dependencies
+├── 📄 LICENSE                                # License information
+└── 📄 README.md                              # Project documentation
 
 ```
 ---
@@ -84,7 +130,7 @@ This project is licensed under the Apache License 2.0 – See the [LICENSE](LICE
 
 ## 🔔 Citation
 
-If you use **AgentMILO** in your research, please cite:
+If you use AgentMILO in your research, please cite:
 
 ```bibtex
 @article{AgentMILO2025,
@@ -107,9 +153,9 @@ AgentMILO is developed by:
 | Jyotheesh Gaddam     | Deakin University         | 📧 [j.gaddam@deakin.edu.au](mailto:j.gaddam@deakin.edu.au) |
 | Lele Zhang          | The University of Melbourne | 📧 [lele.zhang@unimelb.edu.au](mailto:lele.zhang@unimelb.edu.au) |
 | Vicky Mak-Hau        | Deakin University         | 📧 [vicky.mak@deakin.edu.au](mailto:vicky.mak@deakin.edu.au) |
+| John Yearwood        | Deakin University         | 📧 [john.yearwood@deakin.edu.au](mailto:john.yearwood@deakin.edu.au) |
 | Bahadorreza Ofoghi   | Deakin University         | 📧 [b.ofoghi@deakin.edu.au](mailto:b.ofoghi@deakin.edu.au) |
 | Diego Molla-Aliod    | Macquarie University      | 📧 [diego.molla-aliod@mq.edu.au](mailto:diego.molla-aliod@mq.edu.au) |
-| John Yearwood        | Deakin University         | 📧 [john.yearwood@deakin.edu.au](mailto:john.yearwood@deakin.edu.au) |
 
 This research was fully funded by the Australian Research Council (ARC) Discovery Project DP220101925. We also acknowledge Deakin University, Macquarie University, and The University of Melbourne for providing essential resources.
 
