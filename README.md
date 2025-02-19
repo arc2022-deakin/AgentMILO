@@ -158,7 +158,7 @@ If you use AgentMILO in your research, please cite:
 
 ```bibtex
 @article{AgentMILO2025,
-  author    = {Jyotheesh Gaddam and Vicky Mak-Hau and Bahadorreza Ofoghi and John Yearwood and Diego Molla-Aliod and Lele Zhang},
+  author    = {Jyotheesh Gaddam and Lele Zhang and Vicky Mak-Hau and John Yearwood and Bahadorreza Ofoghi and Diego Molla-Aliod},
   title     = {AgentMILO: A Knowledge-Based Framework for Complex MILP Modeling Conversations with LLMs},
   journal   = {ICCAE 2025},
   year      = {2025},
