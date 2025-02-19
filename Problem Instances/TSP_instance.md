@@ -1,4 +1,4 @@
-# 🛣️ TSP Tested Problem Instance with Correct Mathematical Model
+# 🛣️ TSP Tested Problem Instance with Correct Mathematical Model: Created by Lele Zhang
 
 ## 📌 Problem Statement
 
