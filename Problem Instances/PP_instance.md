@@ -1,4 +1,4 @@
-# 🏭 PP Tested Problem Instance with Correct Mathematical Model
+# 🏭 PP Tested Problem Instance with Correct Mathematical Model: Created by Vicky Mak-Hau
 
 ## 📌 Problem Statement
 
