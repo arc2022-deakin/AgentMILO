@@ -59,11 +59,11 @@ This repository contains expert-designed knowledge graphs used in the AgentMILO 
 
 ## 📂 Problem Instances
 
-The tested problem instances used in the AgentMILO framework are stored in the [`Problem Instances/`]([Problem Instances](https://github.com/arc2022-deakin/AgentMILO/tree/main/Problem%20Instances)) folder.
+The tested problem instances used in the AgentMILO framework are stored in the [`Problem Instances/`](Problem%20Instances/) folder.
 
 ### 📌 Included Instances & Credits
-- [Production Planning (PP) Instance] 🏭 - Created by Vicky Mak-Hau  
-- [Traveling Salesperson (TSP) Instance] 🛣️ - Created by Lele Zhang  
+- [Production Planning (PP) Instance](Problem%20Instances/PP_instance.md) 🏭 - Created by Vicky Mak-Hau  
+- [Traveling Salesperson (TSP) Instance](Problem%20Instances/TSP_instance.md) 🛣️ - Created by Lele Zhang  
 
 Each instance includes:
 - Problem Statement
