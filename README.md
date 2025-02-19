@@ -22,8 +22,32 @@ This repository includes:
 
 ---
 
+## 🚀 Installation & Setup
+
+### 📂 Clone the Repository
+```bash
+git clone https://github.com/arc2022-deakin/AgentMILO.git
+cd AgentMILO
+```
+### 📥 Install Dependencies
+Ensure you have Python 3.8+ installed, then install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### ▶️ Run AgentMILO
+Since all the code is inside a .ipynb launch Jupyter Notebook or Google Colab open the notebook:
+```bash
+notebook AgentMILO.ipynb
+```
+Then, run the notebook cell by cell to interact with AgentMILO.
+
+---
+
 ## 📜 License
 This project is licensed under the MIT License – see the LICENSE file for details.
+
+---
 
 ## 👥 Authors & Acknowledgments
 AgentMILO is developed by:
@@ -35,6 +59,8 @@ AgentMILO is developed by:
 - Lele Zhang (The University of Melbourne) - 📧 lele.zhang@unimelb.edu.au
 
 This research is funded by the Australian Research Council (ARC) Discovery Project DP220101925. We also acknowledge Deakin University, Macquarie University, and The University of Melbourne for providing essential resources.
+
+---
 
 ## 📬 Contact
 For questions or collaboration inquiries, please reach out via Email or open an issue on GitHub.
