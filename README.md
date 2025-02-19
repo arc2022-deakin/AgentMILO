@@ -64,12 +64,14 @@ AgentMILO was evaluated against a general LLM agent using:
 
 ## 📂 Repository Structure
 
+```plaintext
 📦 AgentMILO
-├── 📄 AgentMILO.ipynb           # Jupyter Notebook (Code, Prompts, Knowledge Graphs, Conversations, Test Instances)
-├── 📄 requirements.txt       # Dependencies
-├── 📄 LICENSE                # License information
-└── 📄 README.md              # Project documentation
+├── 📄 AgentMILO.ipynb      # Jupyter Notebook (Code, Prompts, Knowledge Graphs, Conversations, Test Instances)
+├── 📄 requirements.txt     # Dependencies
+├── 📄 LICENSE              # License information
+└── 📄 README.md            # Project documentation
 
+```
 ---
 
 ## 📜 License
