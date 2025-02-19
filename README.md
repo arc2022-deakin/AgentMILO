@@ -52,7 +52,7 @@ In this framework, the auto-answering agents are designed to act as different ty
 🔗 Full system prompts for all auto-answering agents are available here:  
 👉 [AgentMILO System Auto Answering Agent Prompts](Auto_Answering_Agents_Prompts.txt)  
 
-# 📌 Auto-Answering Agent Profiles  
+### 📌 Auto-Answering Agent Profiles  
 
 | Agent (User Type) | Description | Interaction Goals | Example Response |
 |----------------------|----------------|----------------------|----------------------|
@@ -72,7 +72,7 @@ The full system prompts include:
 - Interaction rules, memory handling, and termination conditions.
 - Example responses and expected behaviors.
 
-# 🛠 Interaction Guidelines for Auto-Answering Agents
+### 🛠 Interaction Guidelines for Auto-Answering Agents
 - Each agent (acting as a user) has predefined goals and response styles.
 - All agents request summaries and mathematical models from the `Agent_IC` module.
 - No agent is allowed to provide a summary or model—only request them.
