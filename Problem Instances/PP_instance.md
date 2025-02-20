@@ -117,7 +117,6 @@ nbToProduce_{i,j} + nbShortage_{i,j} \geq \text{demand}_{i,j}, \quad \forall i, 
 
 ---
 
-```math
 ## 📌 **Mathematical Model (PP)**  
 
 ### **🔹 Sets**  
@@ -186,6 +185,7 @@ $$
 
 #### **3. Workforce Constraints**  
 Total man-hours must not exceed available hours:  
+```math
 $$
 \text{daysInPeriods}_j \cdot 400 \geq \text{buildTime}_i \cdot nbToProduce_{i,j}, \quad \forall i, j
 $$
