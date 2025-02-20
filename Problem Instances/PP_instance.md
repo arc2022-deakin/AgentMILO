@@ -117,45 +117,57 @@ nbToProduce_{i,j} + nbShortage_{i,j} \geq \text{demand}_{i,j}, \quad \forall i, 
 
 ---
 
-## 📌 **Mathematical Model (PP)**  
+## 📌 Mathematical Model (PP)  
 
 ### **🔹 Sets**  
 ```math
-- **Products**: $ \{ \text{Fry Pans}, \text{Grill Pans}, \text{Saucepans} \} $  
-- **Periods**: $ \{ \text{Spring}, \text{Summer}, \text{Autumn}, \text{Winter} \} $  
+	ext{Products} = \{ 	ext{Fry Pans}, 	ext{Grill Pans}, 	ext{Saucepans} \}  
 ```
+```math
+	ext{Periods} = \{ 	ext{Spring}, 	ext{Summer}, 	ext{Autumn}, 	ext{Winter} \}  
+```
+
 ### **🔹 Parameters**  
 ```math
-- **Days per period**:  
-  $$ \text{daysInPeriods} = \{ 91, 94, 91, 89 \} $$  
-- **Build time (hours per product)**:  
-  $$ \text{buildTime} = \{ 2, 4, 2 \} $$  
-- **Total work hours available per day**:  
-  $$ 400 $$  
-- **Unit material cost**:  
-  $$ \text{unitMaterialCost} = \{ 12, 16, 14 \} $$  
-- **Unit shortage cost**:  
-  $$ \text{unitShortageCost} = \{ 50, 60, 40 \} $$  
-- **Fixed cost per product per season**:  
-  $$ \text{fixedCost} = \{ 1600, 1500, 2000 \} $$  
-- **Predicted demand per product per season**:  
-  $$
-  \text{demand} =
-  \begin{bmatrix}
-  20000 & 16000 & 15000 & 28000 \\
-  18000 & 10000 & 28000 & 30000 \\
-  16000 & 18000 & 17000 & 25000
-  \end{bmatrix}
-  $$
+	ext{daysInPeriods} = \{ 91, 94, 91, 89 \}  
 ```
+```math
+	ext{buildTime} = \{ 2, 4, 2 \}  
+```
+```math
+	ext{totalWorkHoursPerDay} = 400  
+```
+```math
+	ext{unitMaterialCost} = \{ 12, 16, 14 \}  
+```
+```math
+	ext{unitShortageCost} = \{ 50, 60, 40 \}  
+```
+```math
+	ext{fixedCost} = \{ 1600, 1500, 2000 \}  
+```
+```math
+	ext{demand} =
+egin{bmatrix}
+20000 & 16000 & 15000 & 28000 \
+18000 & 10000 & 28000 & 30000 \
+16000 & 18000 & 17000 & 25000
+\end{bmatrix}
+```
+
 ---
 
 ### **🔹 Decision Variables**  
 ```math
-- $ nbToProduce_{i,j} \geq 0 $: Number of units to produce for product $ i $ in period $ j $  
-- $ toProduceOrNot_{i,j} \in \{0, 1\} $: Binary variable indicating if product $ i $ is produced in period $ j $  
-- $ nbShortage_{i,j} \geq 0 $: Number of shortage units for product $ i $ in period $ j $  
+nbToProduce_{i,j} \geq 0  \quad 	ext{(Number of units to produce for product } i 	ext{ in period } j	ext{)}
 ```
+```math
+toProduceOrNot_{i,j} \in \{0, 1\}  \quad 	ext{(Binary variable indicating if product } i 	ext{ is produced in period } j	ext{)}
+```
+```math
+nbShortage_{i,j} \geq 0  \quad 	ext{(Number of shortage units for product } i 	ext{ in period } j	ext{)}
+```
+
 ---
 
 ### **🎯 Objective Function**  
@@ -163,38 +175,34 @@ Minimize the **total cost**, including:
 - **Material cost**  
 - **Shortage cost**  
 - **Fixed cost per season**  
+
 ```math
-$$
-\min \sum_{i \in \text{Products}} \sum_{j \in \text{Periods}} 
-\left( \text{unitMaterialCost}_i \cdot nbToProduce_{i,j} +
-       \text{unitShortageCost}_i \cdot nbShortage_{i,j} +
-       \text{fixedCost}_i \cdot toProduceOrNot_{i,j} \right)
-$$
+\min \sum_{i \in 	ext{Products}} \sum_{j \in 	ext{Periods}} 
+\left( 	ext{unitMaterialCost}_i \cdot nbToProduce_{i,j} +
+       	ext{unitShortageCost}_i \cdot nbShortage_{i,j} +
+       	ext{fixedCost}_i \cdot toProduceOrNot_{i,j} 
+ight)
 ```
 
 ---
 
 ### **🔹 Constraints**  
 #### **1. Production Logic**  
-```math
 A product can be produced only if it is selected for production in that period:  
-$$
-nbToProduce_{i,j} \leq \text{demand}_{i,j} \cdot toProduceOrNot_{i,j}, \quad \forall i, j
-$$
+```math
+nbToProduce_{i,j} \leq 	ext{demand}_{i,j} \cdot toProduceOrNot_{i,j}, \quad orall i, j
 ```
 
 #### **2. Demand Satisfaction**  
 Total production + shortage must cover demand:  
 ```math
-$$
-nbToProduce_{i,j} + nbShortage_{i,j} \geq \text{demand}_{i,j}, \quad \forall i, j
-$$
+nbToProduce_{i,j} + nbShortage_{i,j} \geq 	ext{demand}_{i,j}, \quad orall i, j
 ```
 
 #### **3. Workforce Constraints**  
 Total man-hours must not exceed available hours:  
 ```math
-$$
-\text{daysInPeriods}_j \cdot 400 \geq \text{buildTime}_i \cdot nbToProduce_{i,j}, \quad \forall i, j
-$$
+	ext{daysInPeriods}_j \cdot 400 \geq 	ext{buildTime}_i \cdot nbToProduce_{i,j}, \quad orall i, j
 ```
+
+---
