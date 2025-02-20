@@ -148,7 +148,7 @@ nbToProduce_{i,j} + nbShortage_{i,j} \geq \text{demand}_{i,j}, \quad \forall i, 
 ```
 ```math
 	ext{demand} =
-egin{bmatrix}
+begin{bmatrix}
 20000 & 16000 & 15000 & 28000 \
 18000 & 10000 & 28000 & 30000 \
 16000 & 18000 & 17000 & 25000
@@ -181,7 +181,7 @@ Minimize the **total cost**, including:
 \left( 	ext{unitMaterialCost}_i \cdot nbToProduce_{i,j} +
        	ext{unitShortageCost}_i \cdot nbShortage_{i,j} +
        	ext{fixedCost}_i \cdot toProduceOrNot_{i,j} 
-ight)
+\right)
 ```
 
 ---
