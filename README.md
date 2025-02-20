@@ -65,12 +65,6 @@ The tested problem instances used in the AgentMILO framework are stored in the [
 - [Production Planning (PP) Instance](Problem%20Instances/PP_instance.md) 🏭 - Created by Vicky Mak-Hau  
 - [Traveling Salesperson (TSP) Instance](Problem%20Instances/TSP_instance.md) 🛣️ - Created by Lele Zhang  
 
-Each instance includes:
-- Problem Statement
-- Tables for input data
-- Mathematical Model
-- Constraints & Objective Function
-
 ---
 ## 🧑‍💻 Auto-Answering Agents Acting as Users  
 
