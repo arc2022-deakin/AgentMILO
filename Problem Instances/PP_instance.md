@@ -120,10 +120,12 @@ nbToProduce_{i,j} + nbShortage_{i,j} \geq \text{demand}_{i,j}, \quad \forall i, 
 ## 📌 **Mathematical Model (PP)**  
 
 ### **🔹 Sets**  
+```math
 - **Products**: $ \{ \text{Fry Pans}, \text{Grill Pans}, \text{Saucepans} \} $  
 - **Periods**: $ \{ \text{Spring}, \text{Summer}, \text{Autumn}, \text{Winter} \} $  
-
+```
 ### **🔹 Parameters**  
+```math
 - **Days per period**:  
   $$ \text{daysInPeriods} = \{ 91, 94, 91, 89 \} $$  
 - **Build time (hours per product)**:  
@@ -145,14 +147,15 @@ nbToProduce_{i,j} + nbShortage_{i,j} \geq \text{demand}_{i,j}, \quad \forall i, 
   16000 & 18000 & 17000 & 25000
   \end{bmatrix}
   $$
-
+```
 ---
 
 ### **🔹 Decision Variables**  
+```math
 - $ nbToProduce_{i,j} \geq 0 $: Number of units to produce for product $ i $ in period $ j $  
 - $ toProduceOrNot_{i,j} \in \{0, 1\} $: Binary variable indicating if product $ i $ is produced in period $ j $  
 - $ nbShortage_{i,j} \geq 0 $: Number of shortage units for product $ i $ in period $ j $  
-
+```
 ---
 
 ### **🎯 Objective Function**  
@@ -160,28 +163,33 @@ Minimize the **total cost**, including:
 - **Material cost**  
 - **Shortage cost**  
 - **Fixed cost per season**  
-
+```math
 $$
 \min \sum_{i \in \text{Products}} \sum_{j \in \text{Periods}} 
 \left( \text{unitMaterialCost}_i \cdot nbToProduce_{i,j} +
        \text{unitShortageCost}_i \cdot nbShortage_{i,j} +
        \text{fixedCost}_i \cdot toProduceOrNot_{i,j} \right)
 $$
+```
 
 ---
 
 ### **🔹 Constraints**  
 #### **1. Production Logic**  
+```math
 A product can be produced only if it is selected for production in that period:  
 $$
 nbToProduce_{i,j} \leq \text{demand}_{i,j} \cdot toProduceOrNot_{i,j}, \quad \forall i, j
 $$
+```
 
 #### **2. Demand Satisfaction**  
 Total production + shortage must cover demand:  
+```math
 $$
 nbToProduce_{i,j} + nbShortage_{i,j} \geq \text{demand}_{i,j}, \quad \forall i, j
 $$
+```
 
 #### **3. Workforce Constraints**  
 Total man-hours must not exceed available hours:  
