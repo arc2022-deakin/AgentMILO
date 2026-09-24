@@ -2,6 +2,20 @@
 
 ![GitHub License](https://img.shields.io/badge/license-Apache%202.0-blue.svg) 
 
+### 📄 Published Paper
+
+**AgentMILO: A Knowledge-Based Framework for Complex MILP Modelling Conversations with LLMs**
+
+Published in the **2025 17th International Conference on Computer and Automation Engineering (ICCAE 2025)**, Perth, Australia.
+
+🔗 **[Read the Published Paper (IEEE Xplore)](https://doi.org/10.1109/ICCAE64891.2025.10980596)**  
+
+📚 **DOI:** [10.1109/ICCAE64891.2025.10980596](https://doi.org/10.1109/ICCAE64891.2025.10980596)
+
+**Authors:** Jyotheesh Gaddam, Lele Zhang, Vicky Mak-Hau, John Yearwood, Bahadorreza Ofoghi, Diego Molla-Aliod
+
+---
+
 AgentMILO is an LLM-powered conversational agent designed to assist non-expert users in modeling Mixed-Integer Linear Programming (MILP) problems. By integrating expert-designed knowledge graphs, AgentMILO helps users define constraints, variables, and objectives, ultimately generating structured MILP formulations.
 
 This repository includes:
@@ -151,12 +165,14 @@ This project is licensed under the Apache License 2.0 – See the [LICENSE](LICE
 If you use AgentMILO in your research, please cite:
 
 ```bibtex
-@article{AgentMILO2025,
+@inproceedings{Gaddam2025AgentMILO,
   author    = {Jyotheesh Gaddam and Lele Zhang and Vicky Mak-Hau and John Yearwood and Bahadorreza Ofoghi and Diego Molla-Aliod},
-  title     = {AgentMILO: A Knowledge-Based Framework for Complex MILP Modeling Conversations with LLMs},
-  journal   = {ICCAE 2025},
+  title     = {AgentMILO: A Knowledge-Based Framework for Complex MILP Modelling Conversations with LLMs},
+  booktitle = {2025 17th International Conference on Computer and Automation Engineering (ICCAE)},
+  pages     = {176--182},
   year      = {2025},
-  doi       = {your-doi-here}
+  publisher = {IEEE},
+  doi       = {10.1109/ICCAE64891.2025.10980596}
 }
 ```
 
