@@ -8,11 +8,9 @@
 
 Published in the **2025 17th International Conference on Computer and Automation Engineering (ICCAE 2025)**, Perth, Australia.
 
-🔗 **[Read the Published Paper (IEEE Xplore)](https://doi.org/10.1109/ICCAE64891.2025.10980596)**  
+🔗 <a href="https://doi.org/10.1109/ICCAE64891.2025.10980596" target="_blank">Read the Published Paper on IEEE Xplore ↗</a>
 
-📚 **DOI:** [10.1109/ICCAE64891.2025.10980596](https://doi.org/10.1109/ICCAE64891.2025.10980596)
-
-**Authors:** Jyotheesh Gaddam, Lele Zhang, Vicky Mak-Hau, John Yearwood, Bahadorreza Ofoghi, Diego Molla-Aliod
+**DOI:** <a href="https://doi.org/10.1109/ICCAE64891.2025.10980596" target="_blank">10.1109/ICCAE64891.2025.10980596</a>
 
 ---
 
